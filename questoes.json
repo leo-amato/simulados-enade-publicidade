@@ -1,0 +1,141 @@
+{
+  "simulado": {
+    "titulo": "Simulado ENADE - Publicidade e Propaganda",
+    "subtitulo": "Base 2015",
+    "totalQuestoes": 10,
+    "pontosPorQuestao": 10,
+    "questoes": [
+      {
+        "id": 1,
+        "tipo": "Interpretação de Texto",
+        "enunciado": "Leia o trecho a seguir:\n\n\"A publicidade contemporânea tem buscado dialogar com o consumidor não apenas pela persuasão, mas pela criação de vínculos emocionais, muitas vezes ancorados em narrativas de pertencimento.\"\n\nCom base no trecho, é correto afirmar que:",
+        "alternativas": [
+          "A) A publicidade deve priorizar apenas a venda direta do produto.",
+          "B) Narrativas de pertencimento fortalecem laços emocionais com o público.",
+          "C) A persuasão racional é a única forma eficiente de convencimento.",
+          "D) A publicidade não deve se preocupar com vínculos emocionais."
+        ],
+        "gabarito": "B",
+        "comentario": "O texto destaca a centralidade das narrativas de pertencimento para criar vínculo emocional com o consumidor."
+      },
+      {
+        "id": 2,
+        "tipo": "V/F (modelo alternativo)",
+        "enunciado": "Sobre os conceitos de branding, analise:\nI. Branding está diretamente ligado à gestão estratégica da marca.\nII. Branding é apenas a criação de logotipos e identidade visual.\nIII. Branding busca construir valor simbólico e emocional.\n\nAssinale a alternativa correta:",
+        "alternativas": [
+          "A) Apenas I é verdadeira.",
+          "B) Apenas II é verdadeira.",
+          "C) Apenas I e III são verdadeiras.",
+          "D) Todas são verdadeiras."
+        ],
+        "gabarito": "C",
+        "comentario": "Branding não se restringe a design, mas envolve estratégia e construção de valor."
+      },
+      {
+        "id": 3,
+        "tipo": "Aplicação prática",
+        "enunciado": "Uma marca de refrigerante decide patrocinar um festival de música para jovens. Essa ação está relacionada principalmente ao:",
+        "alternativas": [
+          "A) Endomarketing.",
+          "B) Marketing de Experiência.",
+          "C) Trade Marketing.",
+          "D) Marketing Direto."
+        ],
+        "gabarito": "B",
+        "comentario": "O patrocínio cria experiências de marca, típicas do marketing experiencial."
+      },
+      {
+        "id": 4,
+        "tipo": "Análise de Campanha",
+        "enunciado": "Em uma campanha de moda, a marca usa imagens diversas de corpos e etnias, reforçando diversidade e inclusão. Essa estratégia se associa ao conceito de:",
+        "alternativas": [
+          "A) Comunicação integrada.",
+          "B) Responsabilidade social e representatividade.",
+          "C) Segmentação geográfica.",
+          "D) Endomarketing."
+        ],
+        "gabarito": "B",
+        "comentario": "A campanha busca dialogar com representatividade e inclusão social."
+      },
+      {
+        "id": 5,
+        "tipo": "Questão conceitual",
+        "enunciado": "O conceito de Target Audience refere-se a:",
+        "alternativas": [
+          "A) Público concorrente.",
+          "B) Público-alvo da comunicação.",
+          "C) Equipe interna de marketing.",
+          "D) Estratégia de posicionamento."
+        ],
+        "gabarito": "B",
+        "comentario": "O Target Audience é o público-alvo específico da campanha."
+      },
+      {
+        "id": 6,
+        "tipo": "Interpretação de charges/propaganda",
+        "enunciado": "Em um anúncio, uma empresa de telefonia mostra a imagem de pessoas sorridentes conectadas em diferentes lugares do mundo. O apelo central dessa peça está no:",
+        "alternativas": [
+          "A) Valor funcional do serviço.",
+          "B) Valor emocional da conectividade.",
+          "C) Posicionamento de preço.",
+          "D) Uso do humor para persuasão."
+        ],
+        "gabarito": "B",
+        "comentario": "A peça valoriza a ideia emocional da conectividade, não apenas o serviço técnico."
+      },
+      {
+        "id": 7,
+        "tipo": "Questão de comparação",
+        "enunciado": "A principal diferença entre Publicidade e Propaganda está em:",
+        "alternativas": [
+          "A) A publicidade é paga, enquanto a propaganda pode ser gratuita.",
+          "B) Ambas significam o mesmo e não há distinção prática.",
+          "C) A publicidade é institucional, e a propaganda é comercial.",
+          "D) A propaganda sempre envolve causas sociais."
+        ],
+        "gabarito": "A",
+        "comentario": "A distinção mais aceita é que publicidade envolve compra de espaço, enquanto propaganda pode ter caráter gratuito/ideológico."
+      },
+      {
+        "id": 8,
+        "tipo": "Questão de associação",
+        "enunciado": "Associe os conceitos abaixo:\n(1) Briefing\n(2) Benchmarking\n(3) Brainstorming\n\n( ) Levantamento de informações do cliente/projeto.\n( ) Geração coletiva de ideias.\n( ) Análise de práticas de concorrentes.\n",
+        "alternativas": [
+          "A) 1-2-3",
+          "B) 1-3-2",
+          "C) 2-1-3",
+          "D) 3-2-1"
+        ],
+        "gabarito": "B",
+        "comentario": "Briefing = informações, Brainstorming = ideias, Benchmarking = análise de concorrentes."
+      },
+      {
+        "id": 9,
+        "tipo": "Questão aplicada",
+        "enunciado": "Uma agência cria uma campanha para reduzir o consumo de plástico descartável. Essa campanha pode ser caracterizada como:",
+        "alternativas": [
+          "A) Propaganda ideológica.",
+          "B) Publicidade mercadológica.",
+          "C) Marketing digital.",
+          "D) Endomarketing."
+        ],
+        "gabarito": "A",
+        "comentario": "Trata-se de uma propaganda de caráter ideológico/educacional, não comercial."
+      },
+      {
+        "id": 10,
+        "tipo": "Interpretação crítica",
+        "enunciado": "O crescimento do marketing de influência, com uso de influenciadores digitais, pode ser explicado pelo fato de:",
+        "alternativas": [
+          "A) Substituírem totalmente a publicidade tradicional.",
+          "B) Aumentarem a confiança dos consumidores ao se conectar com a autenticidade percebida.",
+          "C) Serem sempre mais baratos que campanhas tradicionais.",
+          "D) Eliminarem a necessidade de branding."
+        ],
+        "gabarito": "B",
+        "comentario": "Influenciadores funcionam como mediadores de confiança, não substituem todas as formas tradicionais."
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado ENADE - Publicidade e Propaganda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Tela de Instruções -->
+    <div id="instrucoes-screen" class="screen active">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>SIMULADO ENADE</h1>
+                </div>
+                <div class="subtitle">Publicidade e Propaganda - Base 2015</div>
+            </div>
+            
+            <div class="card">
+                <h2><i class="fas fa-info-circle"></i> Instruções</h2>
+                <div class="instrucoes-content">
+                    <div class="instrucao-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Este simulado contém <strong>10 questões</strong> de múltipla escolha</p>
+                    </div>
+                    <div class="instrucao-item">
+                        <i class="fas fa-star"></i>
+                        <p>Cada questão vale <strong>10 pontos</strong> (total: 100 pontos)</p>
+                    </div>
+                    <div class="instrucao-item">
+                        <i class="fas fa-arrow-right"></i>
+                        <p>As questões são apresentadas <strong>uma por vez</strong></p>
+                    </div>
+                    <div class="instrucao-item">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Você deve responder cada questão para avançar</p>
+                    </div>
+                    <div class="instrucao-item">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Ao final, você verá sua pontuação e o gabarito detalhado</p>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nomeAluno">
+                        <i class="fas fa-user"></i>
+                        Digite seu nome completo:
+                    </label>
+                    <input type="text" id="nomeAluno" placeholder="Ex: João Silva Santos" required>
+                    <div class="error-message" id="nomeError">Por favor, digite seu nome para continuar</div>
+                </div>
+                
+                <button class="btn-primary" onclick="iniciarSimulado()">
+                    <i class="fas fa-play"></i>
+                    Iniciar Simulado
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Questões -->
+    <div id="questoes-screen" class="screen">
+        <div class="container">
+            <div class="progress-header">
+                <div class="progress-info">
+                    <span id="questaoAtual">1</span> de <span id="totalQuestoes">10</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="student-name" id="studentName"></div>
+            </div>
+            
+            <div class="card questao-card">
+                <div class="questao-header">
+                    <div class="questao-tipo" id="questaoTipo"></div>
+                    <div class="questao-numero">Questão <span id="questaoNumero">1</span></div>
+                </div>
+                
+                <div class="questao-enunciado" id="questaoEnunciado"></div>
+                
+                <div class="alternativas" id="alternativasContainer"></div>
+                
+                <div class="questao-actions">
+                    <button class="btn-secondary" id="btnAnterior" onclick="questaoAnterior()" disabled>
+                        <i class="fas fa-arrow-left"></i>
+                        Anterior
+                    </button>
+                    <button class="btn-primary" id="btnProxima" onclick="proximaQuestao()" disabled>
+                        Próxima
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Resultado -->
+    <div id="resultado-screen" class="screen">
+        <div class="container">
+            <div class="card resultado-card">
+                <div class="resultado-header">
+                    <div class="score-circle" id="scoreCircle">
+                        <div class="score-number" id="scoreNumber">0</div>
+                        <div class="score-label">pontos</div>
+                    </div>
+                    <h2 id="resultadoNome"></h2>
+                    <div class="resultado-message" id="resultadoMessage"></div>
+                </div>
+                
+                <div class="resultado-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Acertos: <strong id="totalAcertos">0</strong></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Erros: <strong id="totalErros">0</strong></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-percentage"></i>
+                        <span>Aproveitamento: <strong id="percentualAcerto">0%</strong></span>
+                    </div>
+                </div>
+                
+                <div class="resultado-actions">
+                    <button class="btn-secondary" onclick="verGabarito()">
+                        <i class="fas fa-list-check"></i>
+                        Ver Gabarito Detalhado
+                    </button>
+                    <button class="btn-primary" onclick="reiniciarSimulado()">
+                        <i class="fas fa-redo"></i>
+                        Fazer Novamente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Gabarito -->
+    <div id="gabarito-screen" class="screen">
+        <div class="container">
+            <div class="header">
+                <h2><i class="fas fa-list-check"></i> Gabarito Detalhado</h2>
+                <button class="btn-back" onclick="voltarResultado()">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar
+                </button>
+            </div>
+            
+            <div id="gabaritoContainer"></div>
+            
+            <div class="gabarito-actions">
+                <button class="btn-primary" onclick="reiniciarSimulado()">
+                    <i class="fas fa-redo"></i>
+                    Fazer Novamente
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
